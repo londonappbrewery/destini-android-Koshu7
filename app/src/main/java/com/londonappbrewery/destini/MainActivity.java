@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         mAnswer1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (mStoryIndex == 1){
+                if (mStoryIndex == 1 || mStoryIndex ==2){
                     mStoryView.setText(R.string.T3_Story);
                     mAnswer1.setText(R.string.T3_Ans1);
                     mAnswer2.setText(R.string.T3_Ans2);
@@ -40,12 +40,6 @@ public class MainActivity extends AppCompatActivity {
                     mStoryView.setText(R.string.T6_End);
                     mAnswer1.setVisibility(GONE);
                     mAnswer2.setVisibility(GONE);
-                }
-                else if (mStoryIndex == 2){
-                    mStoryView.setText(R.string.T3_Story);
-                    mAnswer1.setText(R.string.T3_Ans1);
-                    mAnswer2.setText(R.string.T3_Ans2);
-                    mStoryIndex = 3;
                 }
             }
         });
